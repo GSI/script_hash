@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+        <!-- Using https://github.com/dcodeIO/bcrypt.js -->
+        <!-- script src="http://raw.github.com/dcodeIO/bcrypt.js/master/bcrypt.min.js"></script -->
+        <head>
+                <meta charset="utf-8"/>
+        </head>
+
+        <body>
+                <!-- method is set to "post" in order to prevent revelation of data via GET in case of deactivated JS -->
+                <form id="dph" method="post">
+                        <!-- label for="domain">Domain</label -->
+                        <input type="text" id="domain" name="domain" autocomplete="off" size="20" placeholder="Domain"/><br/>
+                        <!-- label for="password">Password</label -->
+                        <input type="password" id="password" name="password" autocomplete="off" size="20" placeholder="Password"/><br/>
+                        <button type="submit">Gimme gimme!</button><br/>
+
+                        <!-- label for="hash">Hash</label -->
+                        <input type="text" id="hash" name="hash" placeholder="Generated hash" size="50" />
+                </form>
+
+                <script src="./bcrypt.min.js"></script>
+                <script src="./calculate_hash.js"></script>
+                <script src="./index.js"></script>
+        </body>
+</html>
