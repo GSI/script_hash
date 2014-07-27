@@ -1,25 +1,25 @@
 h1. ScriptHash
 
-**ScriptHash** is a simple and pure JavaScript hashing tool using bcrypt.js for generating hashes.
+**ScriptHash** is a simple and pure JavaScript password hashing tool using bcrypt.js for generating hashes.
 
-It's main design goal is combine command line use (via Node.js) with the option to easily calculate passwords on-the-go via a simple web form.
+It's main design goal is the combination of command line use (via Node.js) with the option to easily calculate passwords on-the-go (via a simple web form).
+
+* Conceptionally the target domain is to be used as salt. However, the user may decide to utilize any other string.
+* As the resulting hash is cut down to the configured size, revelation of the original password is unlikely.
 
 !http://imgs.xkcd.com/comics/password_strength.png!
-
-Conceptionally the target domain is to be used as salt. However, the user may decide to utilize any other string.
-
-As the resulting hash is cut down to the configured size, revelation of the original password is unlikely.
 
 
 h2. Notes
 
-Notes for later reference;
+Notes for later reference
+
 
 h3. Structure of a BCrypt hash string
-
-"Explanation at StackOverflow":https://stackoverflow.com/a/10933491
 
 <pre> 
 $2a$10$TwentytwocharactersaltThirtyonecharacterspasswordhash
 $==$==$======================-------------------------------
 </pre>
+
+"Explanation at StackOverflow":https://stackoverflow.com/a/10933491
