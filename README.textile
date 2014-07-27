@@ -10,6 +10,11 @@ It's main design goal is the combination of command line use (via Node.js) with 
 !http://imgs.xkcd.com/comics/password_strength.png!
 
 
+h2. Demo
+
+The hasher form (HTML + JavaScript) as included in this repository is hosted at https://gsi.github.io/script_hash
+
+
 h2. Notes
 
 Notes for later reference
